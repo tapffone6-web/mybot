@@ -12,18 +12,18 @@ dp = Dispatcher(bot)
 @dp.message_handler(commands=['start'])
 async def send_welcome(message: types.Message):
     markup = InlineKeyboardMarkup()
-    # رابط لعبة التعدين الجاهز
-    game_url = "https://telegram-mining-game-demo.netlify.app"
+    # رابط ويب حقيقي وشغال للمعاينة
+    game_url = "https://example.com"
     
     markup.add(
         InlineKeyboardButton(
-            text="🚀 افتح لعبة التعدين", 
+            text="🚀 افتح التطبيق", 
             web_app=WebAppInfo(url=game_url)
         )
     )
     
     await message.reply(
-        "مرحباً بك في بوت التعدين الخاص بك! ⛏️\nاضغط على الزر أسفله لبدء اللعبة والتعدين مباشرة:", 
+        "مرحباً بك في بوت التعدين الخاص بك! ⛏️\nاضغط على الزر أسفله للتجربة:", 
         reply_markup=markup
     )
 
