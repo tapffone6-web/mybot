@@ -3,7 +3,7 @@ from aiogram import Bot, Dispatcher, executor, types
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 
 # حط هنا الـ Token لي عطاك BotFather بين علامتي التنصيص
-API_TOKEN = AAGpvCRBUjlNtaVawiCCauxHkWYL6R9yeJw
+API_TOKEN = "AAGpvCRBUjlNtaVawiCCauxHkWYL6R9yeJw"
 
 # حط هنا الأيدي (ID) ديالك فتيليجرام باش تولي أنت الأدمن الوحيد
 # (إذا ما عرفتيش الأيدي ديالك، صيفط رسالة لبوت userinfobot فتيليجرام ويعطيه ليك)
