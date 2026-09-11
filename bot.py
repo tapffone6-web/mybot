@@ -1,11 +1,10 @@
 import logging
 from aiogram import Bot, Dispatcher, executor, types
-import os
 
-# التوكن محطوط هنا نيشان باش ما يوقع ليك حتى مشكل
-API_TOKEN = "AAGpvCRBUj1NtaVawiCC"
+# التوكن الصحيح والمقاد هنا
+API_TOKEN = "8779410844:AAGpvCRBUjlNtaVawiCCauxHkWYL6R9yeJw"
 
-# إعداد التسجيل لمراقبة الأخطاء
+# إعداد التسجيل لمراقبة التشغيل
 logging.basicConfig(level=logging.INFO)
 
 # إعداد البوت والمشغل
