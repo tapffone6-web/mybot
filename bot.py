@@ -1,8 +1,9 @@
 import logging
-from aiogram import Bot, Dispatcher, executor, types
+from aiogram import Bot, Dispatcher, types
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton, WebAppInfo
+from aiogram.utils import executor
 
-API_TOKEN = "8779410844:AAGpvCRBUjlNtaVawiCCauxHkWYL6R9yeJw"
+API_TOKEN = "8779410844:AAHiGxuDjJ_tLjdGHTQDKpuLFaj842w041Q"
 
 logging.basicConfig(level=logging.INFO)
 
@@ -12,8 +13,7 @@ dp = Dispatcher(bot)
 @dp.message_handler(commands=['start'])
 async def send_welcome(message: types.Message):
     markup = InlineKeyboardMarkup()
-    # رابط ويب مباشر وشغال للميني أب
-    game_url = "https://jsfiddle.net/v6d8495x/show"
+    game_url = "https://tapffone6-web.github.io/network/"
     
     markup.add(
         InlineKeyboardButton(
@@ -23,9 +23,9 @@ async def send_welcome(message: types.Message):
     )
     
     await message.reply(
-        "مرحباً بك في بوت التعدين الخاص بك! 🚀\nاضغط على الزر أسفله لفتح اللعبة مباشرة:", 
+        "مرحباً بك في بوت التعدين الخاص بك! 🚀\nاضغط على الزر أسفله لبدء اللعبة:", 
         reply_markup=markup
     )
 
 if __name__ == '__main__':
-    executor.start_polling(dp, skip_updates=True)
+    executor.start_polling(dp, skip_updates=True, relax=0.1)
